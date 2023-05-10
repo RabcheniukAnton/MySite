@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Smart Watch Website</title>
+  <!----custom css link---->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+<header>
+  <a href="#" class="logo"><i class='bx bxs-watch'></i>Watchbox</a>
+
+  <ul class="navbar">
+    <li><a href="#" class="active">Overview</a></li>
+    <li><a href="#">Tech Specs</a></li>
+    <li><a href="#">Reviews</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+  <div class="header-icons">
+    <i class='bx bx-cart' ></i>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </div>
+</header>
+<!---home design--->
+<section class="home">
+  <div class="home-img">
+    <img src="img/watch.png" class="one">
+  </div>
+
+  <div class="home-text">
+    <h1>Smart <br> Watch</h1>
+    <h5>Comfortable and modern</h5>
+    <h3>549 UAH</h3>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<div class="main">
+  <div class="row">
+    <li><img src="img/watch.png" onclick="slider('img/watch.png')"> </li>
+  </div>
+
+  <div class="row row2">
+    <li><img src="img/pngwing2.png" onclick="slider('img/pngwing2.3.png')"></li>
+  </div>
+
+  <div class="row row3">
+    <li><img src="img/3.2.png" onclick="slider('img/3.3.png')"></li>
+  </div>
+
+</div>
+<script type="text/javascript">
+  function slider(anything){
+    document.querySelector('.one').src = anything;
+  };
+
+  let menu = document.querySelector('#menu-icon');
+  let navbar = document.querySelector('.navbar');
+
+  menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+  }
+</script>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UKIqzI545rw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</div>
+
+</body>
+<footer>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">PROJECT</a>
+    <a href="#">BLOG</a>
+    <a href="#">CONTACT</a>
+    <a href="#">SERVICE</a>
+    <a href="#">LOCATION</a>
+    <a href="#">ABOUT</a>
+  </nav>
+  <div class="logo">
+    <a href="Site.php"><img class="graficlogo" src="img/smart-watch-vector-icon-isolated-transparent-background-with-watch-transparency-logo-design-stock_677591-6-removebg-preview.png"></a>
+  </div>
+  <div class="social">
+    <a href="#"><img src="img/jojo1.png" alt=""></a>
+  </div>
+</footer>
+</html>
